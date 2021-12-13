@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hotel</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div id="main">
+        <!-- Menu Bar -->
+        <div id="menu">
+            <!-- Nav -->
+            <ul class="nav">
+                <li> 
+                    <a class="bg-red text-white" href="#"><i class="fas fa-bed bed-icon mr-16"></i>Logo</a>
+                </li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <!-- Booking Button -->
+            <div class="booking--btn">
+                <a href="">Book Now</a>
+            </div>
+
+        </div>
+
+        <!-- Header -->
+        <div id="header">
+            <div class="dialog">
+                <div class="header-box bg-red">
+                    <p class="bg-red text-white" ><i class="fas fa-bed bed-icon mr-16"></i>Hotel Name</p>
+                </div>
+
+                <div class="content-box">
+                    <form action="">
+                        <div class="row-form">
+                            <div class="check-in">
+                                <label for="">
+                                    <i class="far fa-calendar  mr-8"></i>Check In
+                                </label>
+                                <input class="input-form" type="datetime" placeholder="DD MM YYYY">
+                            </div>
+                            
+                            <div class="check-out">
+                                <label for="">
+                                    <i class="far fa-calendar  mr-8"></i>Check Out
+                                </label>
+                                <input class="input-form" type="datetime" placeholder="DD MM YYYY">
+                            </div>
+                        </div>
+                        
+                        <div class="row-form">
+                            <div class="adult">
+                                <label for="">
+                                    <i class="fas fa-male  mr-8"></i> Adults
+                                </label>
+                                <input class="input-form" type="number" value="1" min="1" max="6">
+                            </div>
+    
+                            <div class="kid">
+                                <label for="">
+                                    <i class="fas fa-child  mr-8"></i></i> Kids
+                                </label>
+                                <input class="input-form" type="number" value="0" min="0" max="6">
+                            </div>
+                        </div>
+                        
+                        <div class="row-form">
+                            <button class="submit-btn" type="submit" value="Search Availability">
+                                <i class="fas fa-search mr-16"></i> Search Availability
+                            </button>
+                        </div>      
+                    </form>
+                    <div class="search-btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div id="content">
+            <!-- Room Section -->
+            <div id="room" class="room-section">
+
+            </div>
+
+            <!-- About Section -->
+            <div id="about" class="about-section">
+
+            </div>
+
+            <!-- OurHotel Section -->
+            <div id="ourhotel" class="ourhotel-section">
+
+            </div>
+
+            <!-- Subscribe Section -->
+            <div id="subscribe" class="subscribe-section">
+
+            </div>
+
+            <!-- Contact Section -->
+            <div id="contact" class="contact-section">
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+
+        </div>
+
+    </div>
+</body>
+</html>

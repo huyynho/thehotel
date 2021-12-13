@@ -1,0 +1,141 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Common */
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+input{
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+form{
+    padding: 16px 16px;
+}
+.mr-8{
+    margin-right: 8px !important;
+}
+
+.mr-16{
+    margin-right: 16px !important;
+}
+.bg-red{
+    background-color: #f44336 !important;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+.bed-icon{
+    font-size: inherit !important;
+}
+.input-form{
+    padding: 12px;
+    margin-top: 8px;
+}
+
+/* Menu Bar */
+#menu{
+    font-size: 18px;
+    height: 44px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu .nav{
+    display: flex;
+    flex-direction: row;
+}
+
+#menu .nav li{
+    list-style: none;
+    align-self: center;
+}
+
+#menu .nav a{
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 12px 16px;
+}
+#menu .nav a:hover{
+    background-color: #ccc !important;
+}
+
+#menu .booking--btn{
+    align-self: center;
+}
+
+#menu .booking--btn a{
+    color: #000;
+    background-color: #f1f1f1;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 12px 16px;
+}
+#menu .booking--btn a:hover{
+    background-color: #ccc;
+}
+
+/* Header */
+#header{
+    padding-top: 30%;
+    background: url('../img/hotel.jpg') top center / cover no-repeat;
+    display: flex;
+
+}
+
+#header .dialog{
+    background-color: #fff;
+    width: 50%;
+    transform: translateY(-50%);
+    margin-left: 16px;
+}
+
+#header .header-box{
+    font-size: 30px;
+    padding: 18px 16px;
+}
+
+#header .content-box{
+}
+
+#header .row-form{
+    display: flex;
+    padding-top: 16px;
+}
+
+#header .check-in,
+#header .check-out,
+#header .adult,
+#header .kid{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 16px;
+    
+}
+
+
+#header .submit-btn{
+    font-size: 15px;
+    color: #fff;
+    background-color: #616161;
+    outline: none;
+    padding: 8px 16px;
+    margin-left: 16px;
+    border: none;
+    cursor: pointer;
+	outline: inherit;
+}
