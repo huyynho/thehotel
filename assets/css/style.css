@@ -14,12 +14,18 @@ a{
 }
 
 input{
-    outline: none;
     border: 1px solid #ccc;
+    min-width: 100% !important;
 }
 
 form{
     padding: 16px 16px;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px ;
 }
 .mr-8{
     margin-right: 8px !important;
@@ -42,6 +48,7 @@ form{
 .input-form{
     padding: 12px;
     margin-top: 8px;
+    flex:1;
 }
 
 /* Menu Bar */
@@ -137,5 +144,81 @@ form{
     margin-left: 16px;
     border: none;
     cursor: pointer;
-	outline: inherit;
+}
+#header .submit-btn:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+/* Content  */
+#content .room-title h2{
+    font-weight: 500;
+}
+#content .room-section{
+    padding: 32px 16px;
+    background-color: #f1f1f1;
+
+}
+
+#content .room-form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+#content .col{
+    display: flex;
+    flex-direction: column;
+    padding-right: 16px;
+    flex: 1;
+}
+
+#content .room-submit-btn{
+    font-size: 15px;
+    color: #fff;
+    background-color: #000;
+    padding: 0 16px;
+    cursor: pointer;
+    padding: 12px;
+}
+#content .room-submit-btn:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+/* Card Item */
+#content .cards{
+    display: flex;
+}
+#content .card{
+    width: 33.33333%;
+}
+
+#content .card__img{
+    display: flex;
+}
+
+#content .card__content,
+#content .card__icon{
+    padding: 8px;
+    background-color: #fff;
+}
+
+#content .card__content{
+    line-height: 2.2;
+}
+
+#content .card__content h2{
+    font-weight: 400;    
+}
+#content .card__content h6{  
+    font-size: 16px;    
+    font-weight: 400;
+    opacity: 0.8;
+}
+#content .card__content p{  
+    font-size: 15px;    
+    font-weight: 400;
+    opacity: 0.9;
 }
