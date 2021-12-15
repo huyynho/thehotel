@@ -15,17 +15,20 @@ a{
 
 input{
     border: 1px solid #ccc;
-    min-width: 100% !important;
+    min-width: 100%;
 }
 
 form{
-    padding: 16px 16px;
+    padding: 0 16px 16px 16px;
 }
 .mt-8{
     margin-top: 8px !important;
 }
 .mt-16{
     margin-top: 16px ;
+}
+.mt-24{
+    margin-top: 24px !important;
 }
 .mr-8{
     margin-right: 8px !important;
@@ -34,8 +37,15 @@ form{
 .mr-16{
     margin-right: 16px !important;
 }
+.red{
+    color: #f44336 !important;
+}
 .bg-red{
     background-color: #f44336 !important;
+}
+
+.bg-black{
+    background-color: #000 !important;
 }
 
 .text-white{
@@ -46,7 +56,7 @@ form{
     font-size: inherit !important;
 }
 .input-form{
-    padding: 12px;
+    padding: 16px;
     margin-top: 8px;
     flex:1;
 }
@@ -99,8 +109,6 @@ form{
 #header{
     padding-top: 30%;
     background: url('../img/hotel.jpg') top center / cover no-repeat;
-    display: flex;
-
 }
 
 #header .dialog{
@@ -120,7 +128,7 @@ form{
 
 #header .row-form{
     display: flex;
-    padding-top: 16px;
+    flex-wrap: wrap;
 }
 
 #header .check-in,
@@ -135,12 +143,14 @@ form{
 }
 
 
+
+
 #header .submit-btn{
-    font-size: 15px;
+    font-size: 16px;
     color: #fff;
     background-color: #616161;
     outline: none;
-    padding: 8px 16px;
+    padding: 12px 16px;
     margin-left: 16px;
     border: none;
     cursor: pointer;
@@ -155,7 +165,7 @@ form{
     font-weight: 500;
 }
 #content .room-section{
-    padding: 32px 16px;
+    padding: 32px 16px 16px 16px;
     background-color: #f1f1f1;
 
 }
@@ -163,6 +173,7 @@ form{
 #content .room-form{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
 
 }
@@ -178,9 +189,8 @@ form{
     font-size: 15px;
     color: #fff;
     background-color: #000;
-    padding: 0 16px;
     cursor: pointer;
-    padding: 12px;
+    padding: 16px 8px;
 }
 #content .room-submit-btn:hover{
     color: #000;
@@ -201,7 +211,7 @@ form{
 
 #content .card__content,
 #content .card__icon{
-    padding: 8px;
+    padding: 8px 16px;
     background-color: #fff;
 }
 
@@ -215,10 +225,166 @@ form{
 #content .card__content h6{  
     font-size: 16px;    
     font-weight: 400;
+    font-style: italic;
     opacity: 0.8;
 }
 #content .card__content p{  
     font-size: 15px;    
     font-weight: 400;
     opacity: 0.9;
+}
+#content .card__btn{
+    padding: 16px;
+    background-color: #fff;
+}
+
+/* About */
+#content .about-section{
+    padding: 16px;
+    background-color: #f1f1f1;
+    display: flex;
+}
+
+#content .about-content{
+    flex: 1;
+}
+#content .about-content h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+#content .about-content p{
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+#content .about-img{
+    flex: 2;
+    filter: grayscale(75%);
+}
+
+/* Service  */
+#content .service-section{
+    padding: 16px;
+    background-color: #f1f1f1;
+}
+
+#content .info{
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+}
+#content .info i{
+    font-size: 16px;
+}
+#content .service-content{
+    padding: 42px 16px;
+}
+#content .service-content i{
+    font-size: 14px;
+}
+
+#content .info-icon{
+    background-color: #ff5722;
+    padding: 8px 16px;
+}
+
+/* Our Hotel */
+#content .ourhotel-section{
+    padding: 16px;
+    background-color: #f1f1f1;
+}
+
+#content .hotel-title h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#content .hotel-desc{
+
+}
+
+#content .hotel-img{
+    display: flex;
+    flex-direction: row;
+    padding: 32px 0;
+}
+
+#content .img-first{
+    flex: 2;
+}
+
+#content .img-second{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Subscribe */
+#content .subs-section{
+    padding: 32px 16px;
+    background-color: #000;
+    opacity: 0.6;
+}
+#content .subs-section:hover{
+    opacity: 1;
+}
+#content .subs-section h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#content .subs-btn{
+    font-size: 15px;
+    color: #fff;
+    outline: none;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#content .subs-btn:hover{
+    color: #000;
+    background-color: #ccc !important;
+}
+
+/* Contact */
+#content .contact-section{
+    background-color: #f1f1f1;
+    padding: 32px 16px;
+}
+
+#content .contact-info{
+    font-size: 15px;
+    line-height: 2;
+}
+#content .contact-info i{
+    font-size: 12px;
+}
+
+/* Footer */
+#footer{
+    background-color: #000;
+    text-align: center;
+    padding: 32px 0;
+}
+#footer .footer-title h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+#footer .socials-list{
+    font-size: 24px;
+}
+
+#footer .socials-list i:hover{
+    opacity: 0.6;
+}
+
+#footer .copyright a{
+    color: #fff;
+}
+
+#footer .copyright a:hover{
+    opacity: 0.6;
 }
