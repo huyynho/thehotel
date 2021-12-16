@@ -1,0 +1,105 @@
+/* Common */
+
+
+/* PC */
+@media (min-width: 1024px){
+    #menu .nav li{
+        align-self: center;
+    }
+}
+
+/* Tablet and Mobile*/
+@media(max-width: 1023px){
+    #content .about-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    #header .dialog {
+        width: 66.66666%;
+    }
+    
+    #content .room-form {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #menu .nav li{
+        align-self: center;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 739px){
+    .s-mr-0{
+        margin-right: 0 !important;
+    }
+    .s-mt-0{
+        margin-top: 0 !important;
+    }
+    .s-mt-16{
+        margin-top: 16px !important;
+    }
+    img{
+        display: block;
+    }
+    #menu{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menu .nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #menu .nav li {
+    }
+    #menu .booking--btn {
+    }
+    #header .dialog {
+        transform: translateY(-16%);
+        width: 92%;
+        margin-right: 16px;
+    }
+
+    #content .room-form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+    }
+    #content .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    #content .card {
+        width: 100%;
+    }
+
+    #content .info {
+        font-size: 18px;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        line-height: 2;
+        text-align: center;
+    }
+
+    #content .hotel-img {
+        display: flex;
+        flex-direction: column;
+        padding: 32px 0;
+    }
+
+    #content .subs-btn {
+        width: 100%;
+    }
+}
