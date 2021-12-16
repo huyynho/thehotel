@@ -192,6 +192,8 @@ form{
     background-color: #000;
     cursor: pointer;
     padding: 16px 8px;
+    appearance: none;
+    -webkit-appearance: none;
 }
 #content .room-submit-btn:hover{
     color: #000;
