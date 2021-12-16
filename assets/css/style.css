@@ -108,14 +108,16 @@ form{
 
 /* Header */
 #header{
-    padding-top: 30%;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: url('../img/hotel.jpg') top center / cover no-repeat;
 }
 
 #header .dialog{
     background-color: #fff;
     width: 50%;
-    transform: translateY(-50%);
     margin-left: 16px;
 }
 
